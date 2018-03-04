@@ -8,8 +8,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-#ifndef BOOST_INTERPROCESS_FILE_GUARD_HPP
-#define BOOST_INTERPROCESS_FILE_GUARD_HPP
+#ifndef BOOST_INTERPROCESS_FILE_MUTEX_HPP
+#define BOOST_INTERPROCESS_FILE_MUTEX_HPP
 
 #ifndef BOOST_CONFIG_HPP
 #include <boost/config.hpp>
@@ -25,7 +25,7 @@
 #include <boost/interprocess/sync/file_lock.hpp>
 
 //!\file
-//! Describes a class that wraps file locking capabilities.
+//! Describes a class that wraps file access synchronization capabilities.
 
 namespace boost {
 namespace interprocess {
@@ -165,4 +165,4 @@ private:
 
 #include <boost/interprocess/detail/config_end.hpp>
 
-#endif // BOOST_INTERPROCESS_FILE_GUARD_HPP
+#endif // BOOST_INTERPROCESS_FILE_MUTEX_HPP
