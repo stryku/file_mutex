@@ -7,9 +7,9 @@ int main(int argc, char* argv[])
 {
     const auto path = "test_file.txt";
     std::ofstream file(path, std::ios::app);
-    boost::interprocess::file_mutex guard(path);
+    boost::interprocess::file_mutex file_mutex(path);
 
-    std::lock_guard<boost::interprocess::file_mutex> lock(guard);
+    std::lock_guard<boost::interprocess::file_mutex> lock(file_mutex);
 
     for (auto i = 0u; i < 10; ++i)
     {
